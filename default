@@ -1,0 +1,26 @@
+#Default server configuration
+#
+server {
+
+
+	root /home/anshul/edwisor/Assignment-5/app;
+
+	index index.html index.htm index.nginx-debian.html;
+
+
+	error_page 404 /404-error.html;
+	location /404-error.html {
+	root /home/anshul/edwisor/Assignment-5/app;
+	internal;
+	}
+
+	error_page 500 502 503 504 /500-error.html;
+	location /500-error.html{
+	root /home/anshul/edwisor/Assignment-5/app;
+	internal;
+	}
+	
+		
+}
+
+
